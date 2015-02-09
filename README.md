@@ -18,12 +18,14 @@ Go here to see the project in action.
 ##Step 1: Prepare the Back-end
 Make sure you have a Twilio account set up and that you have your account ID and AuthToken ready.
 
-* Install `twilio-node` as a dependency 
+* Install `twilio-node` as a dependency OR 'twilio'
 * Install `firebase` as a dependency
 * Create a server.js file that uses express and serves static files out of a `/public` directory. Create a simple index.html file in your public directory and test your server.js file to make sure static files are being served.
 * Make sure you have express and body-parser installed as dependencies and are using bodyParser.json() as middleware
 * Create an account with Zapier.
 * Create a new project in Firebase for TextSupport.
+
+****************************************
 
 ##Step 2: Make Twilio -> Zapier -> Firebase trigger
 We'll use Firebase and a service called Zapier to detect new requests to our TextSupport system. 
