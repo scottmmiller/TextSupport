@@ -30,7 +30,7 @@ Make sure you have a Twilio account set up and that you have your account ID and
 ##Step 2: Make Twilio -> Zapier -> Firebase trigger
 We'll use Firebase and a service called Zapier to detect new requests to our TextSupport system. 
 * Require the `firebase` library. 
-* Create a new Firebase reference to your projet in Node. (One of the cool things about Firebase is that they have the exact same APIs for Javascript, whether front-end or back.) The url should be:
+* Create a new Firebase reference to your project in Node. (One of the cool things about Firebase is that they have the exact same APIs for Javascript, whether front-end or back.) The url should be:
 
 ```
 https://<my-app-name>.firebaseio.com/numbers
@@ -45,6 +45,8 @@ When matching up the Twilio SMS with the Firebase child record, you can use some
 You can either have the entire Twilio SMS object sent, or just save the fields you need, like `From`, `Date Sent` and `Body`
 
 Test your server.js file and your Zap using the "Test this Zap" section of the Zap editor. If all goes well, you should be able to see your message data added to Firebase when the Zap is tested.
+
+********************************************
 
 ##Step 3: Start Front-end
 
