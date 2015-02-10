@@ -36,7 +36,12 @@ app.post('/api/support/messages', function(req, res) {
 			res.status(400).end(error);
 		}
 	})
-})
+});
+
+app.get('/support/resources/:resouce_name', function(req, res) {
+	
+
+});
 
 
 app.listen(port, function() {
