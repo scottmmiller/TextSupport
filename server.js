@@ -11,7 +11,10 @@ app.use(express.static(__dirname + '/public'));
 
 var firebaseRef = 'https://textsupport99.firebaseio.com/numbers';
 
-
+app.get('/support', function(req, res) {
+	res.json(firebaseRef.data);
+	console.log(firebaseRef.data)
+})
 
 
 app.listen(port, function() {

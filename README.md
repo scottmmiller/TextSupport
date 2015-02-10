@@ -76,6 +76,8 @@ ng-repeat="(key, val) in object"
 
 This will help you retrieve the phone number.
 
+*************************************
+
 ##Step 4: Add "reply" ability
 Now we'll make it so that messages sent from our dashboard will be saved in Firebase and sent to the user.
 

@@ -1,0 +1,19 @@
+<div >
+	<div class='support-header'><h1> This is the Support Page </h1></div>
+
+	<div class="test"> {{test}} </div>
+
+	<div><h3> Tickets </h3></div>
+
+	<div ng-repeat='(key, value) in tickets'>
+		<div ng-repeat='item in value'>
+			{{item.from}} <br />
+			{{item.body}} <br />
+			{{item.date_sent}} <hr />
+		</div>
+	</div>
+
+
+
+
+</div>
