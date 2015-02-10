@@ -5,13 +5,19 @@
 
 	<div><h3> Tickets </h3></div>
 
-	<div ng-repeat='(key, value) in tickets'>
-		<div ng-repeat='item in value'>
-			{{item.from}} <br />
+	<div ng-repeat='(number, value) in tickets'>
+		<h4> {{number}} </h4>
+		<span ng-repeat='item in value'>
 			{{item.body}} <br />
-			{{item.date_sent}} <hr />
+			{{item.date_sent}} <br />
+			{{item.status}} <hr />
+		</span>
+		<div class='reply-area'>
+			<input type="text" ng-model='replyText' placeholder='Response...'>
+			<button ng-click='sendResponse(replyText, number)'> Send </button>
 		</div>
 	</div>
+
 
 
 

@@ -92,6 +92,8 @@ Once the text has been sent successfully, add the record to the Firebase collect
 
 Now, add in front-end necessary (including a service) for a support agent to reply to the conversation.
 
+*****************************************8
+
 ##Step 5: Add resources endpoint
 For our final step, we'll make some resources that will be easy to send to our customers who are needing support. We'll start by making a server-side endpoint:
 
