@@ -9,11 +9,14 @@ var port = 9999;
 app.use(bodyParser.json());
 app.use(express.static(__dirname + '/public'));
 
-var firebaseRef = 'https://textsupport99.firebaseio.com/numbers';
+// var firebaseRef = new Firebase('https://textsupport99.firebaseio.com/numbers');
 
-app.get('/support', function(req, res) {
-	res.json(firebaseRef.data);
-	console.log(firebaseRef.data)
+// app.get('/support', function(req, res) {
+// 	res.json(firebaseRef.data);
+// })
+
+app.post('/api/support/messages', function(req, res) {
+
 })
 
 

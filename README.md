@@ -84,7 +84,7 @@ Now we'll make it so that messages sent from our dashboard will be saved in Fire
 Let's start by creating an API endpoint in our server.js:
 
 ####`POST /support/messages/`
-Using the twilio-node API, make it so that any POST sent to the above endpoint with will send a text to the originating number. You should probably pass the "to" number in the POST JSON data.
+Using the twilio-node API, make it so that any POST sent to the above endpoint will send a text to the originating number. You should probably pass the "to" number in the POST JSON data.
 
 Once the text has been sent successfully, add the record to the Firebase collection. You might consider marking support messages differently than user messages in Firebase. That way your interface could make it a little easier to distinguish outgoing from incoming messages. Maybe like this:
 
